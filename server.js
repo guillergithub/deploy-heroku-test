@@ -1,7 +1,17 @@
-const app = require('./server');
+// const app = require('./server');
+// require("dotenv").config();
+
+// const PORT = process.env.PORT || 8000;
+
+// app.listen(PORT, () => {
+//   console.log(`Escuchando en el puerto ${PORT}`)
+// })
+
+const app = require("./app");
+require("dotenv").config();
 
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
-  console.log(`Escuchando en el puerto ${PORT}`)
-})
+  console.log(`Servidor iniciado en el puerto ${PORT}`);
+});
